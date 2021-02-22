@@ -6,10 +6,27 @@
 
 /* REGOLE RICORRENTI DI PAGINA */
 
+/* REGOLE div.container */
+body > div.container {
+  display: flex;
+}
 /* REGOLE HEADER/CTA */
+header.container-flex {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
 
+}
+
+header.container-flex button{
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
 /* REGOLE NAV MENU */
 
 /* REGOLE CENTRAL CONTENT BLOCK */
-
+main .central-content {
+  overflow: scroll;
+}
 /* REGOLE PLAYER BAR */
