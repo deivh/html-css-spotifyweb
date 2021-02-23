@@ -4,7 +4,7 @@
     <!-- responsive meta tag that i forget every time -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css">
     <title>Spotify</title>
   </head>
@@ -12,19 +12,72 @@
     <div class="container-flex">
 
       <!-- HEADER/ CALL TO ACTION FOR REGISTRATION -->
-      <header class="container-flex">
-        <div class="">
-          <button type="button" name="button">EFFETTUA ORA L'UPGRADE</button>
-        </div>
-      </header>
-
-
       <main class="container-flex">
 
         <!-- navigation menu/playlist menu -->
-        <div class="menu">
 
+        <div class="menu">
+          <span id="logo">
+            <img src="img/logo.svg" alt="logo spotify">
+          </span>
+
+          <!-- home button -->
+          <div class="">
+            <img src="img/home.svg" alt="home button">
+            <span>Home</span>
+          </div>
+
+          <!-- search button -->
+          <div class="">
+            <img src="img/search.svg" alt="search button">
+            <span>Cerca</span>
+          </div>
+
+          <!-- my stuff button -->
+          <div class="">
+            <img src="img/libreria.svg" alt="libreria">
+            <span>La Tua Libreria</span>
+          </div>
+
+          <!-- playlist box -->
+          <h2>PLAYLIST</h2>
+          <div class="">
+            <i class="fas fa-plus"></i>
+            <a href="#">Nuova Playlist</a>
+          </div>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          <a href="#">Nuova Playlist</a>
+          
+
+          <!-- fixed login/cta box -->
+          <div id="profile-signin">
+            <div class="">
+              <img src="img/download.svg" alt="simbolo download">
+              <h4>Installa l'App</h4>
+            </div>
+            <hr>
+            <div class="">
+              <img src="img/profile.svg" alt="simbolo profilo">
+              <h3>John Doe</h3>
+            </div>
+          </div>
         </div>
+
+
+        <div class="cta">
+          <button type="button" name="button">EFFETTUA ORA L'UPGRADE</button>
+        </div>
+
+
+
+
 
         <!-- central page with overflow scroll -->
         <div class="central-content">
