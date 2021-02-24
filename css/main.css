@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 /* REGOLE RICORRENTI DI PAGINA */
 .container-flex {
   display: flex;
@@ -13,7 +17,7 @@
 main.container-flex .cta-top{
   position: fixed;
   margin-left:200px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   height: 80px;
   width: calc(100vw - 200px);
 }
@@ -36,12 +40,22 @@ main .menu {
   flex-direction: column;
   position: fixed;
 }
+
+ main .menu > div {
+   padding: 6px 0;
+ }
 main .menu a {
+  vertical-align: middle;
   text-decoration: none;
   color: white;
 }
 main .menu img {
+  vertical-align: middle;
   width: 35px;
+}
+
+main .menu h2 {
+  padding: 5px 0;
 }
 
 main .menu #logo img {
@@ -53,7 +67,18 @@ main .menu .side-bar {
 }
 
 main .menu .side-bar > a {
-  display:block
+  display: block;
+  padding: 5px;
+}
+
+main .menu .side-bar > div i {
+  padding: 5px;
+  background-color: white;
+  color:#191414;
+}
+
+main .menu .side-bar > div a {
+  font-weight: bold;
 }
 
 main .menu #profile-signin {
@@ -66,6 +91,7 @@ main .menu #profile-signin img {
   width: 20px;
   height: auto;
 }
+
 /* REGOLE CENTRAL CONTENT BLOCK */
 
 main{
