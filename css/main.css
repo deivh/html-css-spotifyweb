@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,22 +6,34 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
 }
 /* REGOLE RICORRENTI DI PAGINA */
 .container-flex {
   display: flex;
+}
+/* color grey  */
+main .menu .side-bar a ,
+main .menu #profile-signin h4 ,
+main .menu > div a ,
+main .central-content section h4 ,
+.player h6 ,
+.player .music-data i
+{
+  color: #a3a3a3;
 }
 
 /* REGOLE HEADER/CTA */
 main.container-flex .cta-top{
   position: fixed;
   margin-left:200px;
-  background-color: rgba(28, 28, 28, 0.8);
+  background-color: rgba(8, 11, 18, 0.95);
   height: 80px;
   width: calc(100vw - 200px);
 }
 
 main.container-flex button{
+  color: white;
   margin-top: 20px;
   margin-right: 30px;
   background-color: rgba(0, 0, 0, 0);
@@ -43,6 +54,11 @@ main .menu {
   display: flex;
   flex-direction: column;
   position: fixed;
+}
+
+main .menu #home a{
+  color: white;
+  font-weight: bold;
 }
 
  main .menu > div {
@@ -76,8 +92,9 @@ main .menu .side-bar > a {
 }
 
 main .menu .side-bar > div i {
+  margin: 5px;
   padding: 5px;
-  background-color: white;
+  background-color: #a3a3a3;
   color:#191414;
 }
 
@@ -185,7 +202,13 @@ main .central-content .music-cover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 100%;
 }
+
+main .central-content .music-cover .cover-card {
+  flex-shrink: 0;
+}
+
 main .central-content .music-cover-suggest {
   display: flex;
 }
@@ -197,8 +220,8 @@ main .central-content .music-cover .cover-card  {
   width: calc((100% / 6) - 40px)
 }
 
-main .central-content .music-cover .cover-card img {
- width: 100%;
+main .central-content img {
+ width: 177px;
  height: auto;
 }
 
@@ -215,11 +238,130 @@ main .central-content #rounded-pics .music-cover-suggest .cover-card img {
   justify-content: space-between;
   height: 100px;
   width: 100%;
-  background-color: #171b1b;
+  background-color: #282828;
   color: white;
 }
 
 .player img {
-  width: 45px;
-  height: auto;
+  width: 60px;
+  height: 60px;
+}
+
+.player .music-data {
+  display: flex;
+  flex-shrink: 1;
+}
+.player .music-data img {
+  margin: 10px;
+  align-self: center;
+}
+
+.player .music-data div {
+  padding: 5px;
+  align-self: center;
+}
+
+.player .music-data i {
+  padding: 3px;
+  align-self: center;
+}
+
+.player .music-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.player .music-bar .icons {
+  align-self: center;
+  font-size: 25px;
+  padding: 15px;
+}
+.player .music-bar .icons i:hover {
+  color: #1DB954;
+}
+.player .music-bar .bar {
+  display: flex;
+  flex-shrink: 1
+}
+
+.player .music-bar .bar span {
+  margin: 5px;
+}
+
+.player .music-bar .bar .progression-bar {
+  width: 600px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.player .music-bar .bar .progression-bar-active {
+  width: 80px;
+  height: 5px;
+  background-color: #ccc;
+  position: absolute;
+}
+
+
+.player .music-bar .bar .progression-bar .pointer{
+  display: none;
+}
+
+.player .music-bar .bar .progression-bar:hover .progression-bar-active , .player .volume-bar .progression-bar:hover .progression-bar-active{
+  background-color: #1DB954;
+}
+
+.player .music-bar .bar .progression-bar:hover .pointer {
+  display: block;
+  position: absolute;
+  left: 72px;
+  top: -7px;
+}
+
+.player .volume-bar {
+  margin-right: 10px;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.player .volume-bar i:hover {
+  color: #1DB954;
+}
+.player .volume-bar  {
+  display: flex;
+  flex-shrink: 1
+}
+
+.player .volume-bar .progression-bar {
+  width: 100px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.player .volume-bar .progression-bar-active {
+  width: 42px;
+  height: 5px;
+  background-color: #ccc;
+  position: absolute;
+}
+
+.player .volume-bar .progression-bar .pointer{
+  display: none;
+}
+
+.player .volume-bar .progression-bar:hover .pointer {
+  display: block;
+  position: absolute;
+  left: 35px;
+  top: -7px
+}
+
+.player .volume-bar i {
+  padding: 5px;
+  align-self: center;
+}
+
+.player .volume-bar .progression-bar {
+  align-self: center;
 }
