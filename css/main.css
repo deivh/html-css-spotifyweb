@@ -57,14 +57,17 @@ main .menu {
   flex-direction: column;
   position: fixed;
 }
-
+main .menu #home img {
+  border-left: 3px solid  #1DB954;
+}
 main .menu #home a{
   color: white;
   font-weight: bold;
+
 }
 
  main .menu > div {
-   padding: 6px 0;
+   padding: 10px;
  }
 main .menu a {
   vertical-align: middle;
@@ -170,6 +173,7 @@ main .central-content nav ul {
 
 main .central-content  nav ul li {
   display: inline-block;
+  font-size: 18px;
   padding: 5px;
 }
 
@@ -229,14 +233,14 @@ main .central-content .music-cover .cover-card ,
 main .central-content .music-cover-suggest .cover-card ,
 main .central-content #rounded-pics .music-cover-suggest .cover-card {
   display: flex;
-  flex: 0 0 241px;
+  flex: 0 0 200px;
   flex-wrap: wrap;
   position: relative;
   width: calc((100% / 6) - 40px)
 }
 
 main .central-content img {
-  width: 241px;
+  width: 200px;
   height: auto;
 }
 
@@ -275,6 +279,7 @@ main .central-content #rounded-pics .music-cover-suggest .cover-card img {
   width: 100%;
   background-color: #282828;
   color: white;
+  flex-shrink: 1;
 }
 
 .player img {
@@ -304,6 +309,7 @@ main .central-content #rounded-pics .music-cover-suggest .cover-card img {
 .player .music-bar {
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
   justify-content: center;
 }
 .player .music-bar .icons {
