@@ -16,7 +16,7 @@
         <!-- navigation menu/playlist menu -->
 
         <div class="menu">
-          <!-- menu when viewporw < 568px -->
+          <!-- menu when viewport < 568px -->
           <aside class="grow">
             <img src="img/logo-small.svg" alt="" class="xs">
             <img src="img/home.svg" alt="home button" class="xs">
@@ -133,7 +133,7 @@
               </li>
             </ul>
           </nav>
-          <h2>Recently played</h2>
+          <h2 id="mainTitle">Recently played</h2>
 
           <!-- riga con cover playlist/artisti/album musicali -->
 
@@ -278,5 +278,8 @@
           </div>
         </div>
       </div>
+      <script>
+        document.getElementById('mainTitle').innerHTML='Not so recently played';
+      </script>
   </body>
 </html>

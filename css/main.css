@@ -11,6 +11,7 @@ body {
 /* REGOLE RICORRENTI DI PAGINA */
 .container-flex {
   display: flex;
+  background-color: #141922;
 }
 /* color grey  */
 main .menu .side-bar a ,
@@ -407,6 +408,20 @@ main .central-content #rounded-pics .music-cover-suggest .cover-card img {
 .player .volume-bar .progression-bar {
   align-self: center;
 }
+
+.menu {
+  flex-basis: 200px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.central-content{
+  flex-basis: calc(100vw - 200px);
+  flex-grow: 1;
+  min-height: calc(100vh - 100px);
+  margin-top: 80px;
+}
+
 
 
 /* media queries */
